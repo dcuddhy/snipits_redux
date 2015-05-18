@@ -1,0 +1,81 @@
+body{
+  color: red;
+  margin-top: 0;
+}
+
+.header{
+  background: lightgrey;
+}
+
+.tile{
+  width: 33%;
+  height: 400px;
+  background: teal;
+  left: 33%;
+  color: orange;
+  position: fixed;
+  float: left;
+}
+
+.tile img{
+  margin: 50px;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+}
+
+.section {
+    position:relative;
+    z-index:1;
+    height:500px;
+    width:100%;
+    background-attachment:fixed;    /* this keeps the background in place */
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+}
+.content {
+    position:relative;
+    z-index:2;
+    background:#fff;
+    border:2px solid #666;
+    height:50%;    /* this height difference allows the bg to show through */
+    transition-property: background, opacity;
+    transition-duration: 1s;
+}
+
+.purple{
+  background: purple;
+  display: block;
+  color: white;
+  opacity: 1;
+  transition-property: background, opacity;
+  transition-duration: 1s;
+}
+
+.orange{
+  background: orange;
+  display: block;
+  color: white;
+  opacity: 1;
+  transition-property: background, opacity;
+  transition-duration: 1s;
+}
+
+.section#s1 {
+    background-image: url(http://farm4.staticflickr.com/3290/3090990005_1177611ccb_o.jpg);
+}
+
+.section#s2 {
+    background-image: url(http://farm5.staticflickr.com/4135/4820238049_8e830ec494_b.jpg);
+}
+
+.section#s3 {
+    background-image: url(http://farm5.staticflickr.com/4015/4589449172_eb046a7f2a_b.jpg);
+}
+
+.section#s4 {
+    background-image: url(http://farm9.staticflickr.com/8109/8623081923_9cffafc4a7_h.jpg);
+}
+.section#s5 {
+    background-image: url(http://farm4.staticflickr.com/3073/3090985991_8d4b559d29_o.jpg);
+}
