@@ -32,19 +32,20 @@ body {
 
 .content {
 	float: left;
-	width: 640px;
-  margin-top: 200px;
+	width: 100%;
+  margin-top: 400px;
   opacity: .90;
-  background: whitesmoke;
+  background: lightgrey;
+	padding: 0 20px;
 }
 
 .aside {
-	background: #cecece;
+	background: grey;
 	float: left;
   position: absolute;
 	/*padding: 20px;*/
 	padding: 0 20px;
-	width: 260px;
+	width: 100%;
   z-index:-1;
 }
 
@@ -67,4 +68,13 @@ p {
 	bottom: 40px;
 	position: absolute;
 	left: 0;
+}
+
+/*custom*/
+img{
+  marin: 0 auto;
+}
+.aside p, .content p{
+  color: yellow;
+  text-align: center;
 }

@@ -1,2 +1,2 @@
-Use a python server to run this locally:
+Use a python server to run locally:
 python -m SimpleHTTPServer
