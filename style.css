@@ -61,6 +61,19 @@ body{
   transition-duration: 1s;
 }
 
+
+
+
+#c2{
+  position: sticky;
+  font-size: 40pt;
+}
+
+#c2.stuck{
+  font-size: 60pt;
+  background: blue;
+}
+
 .section#s1 {
     background-image: url(http://farm4.staticflickr.com/3290/3090990005_1177611ccb_o.jpg);
 }
