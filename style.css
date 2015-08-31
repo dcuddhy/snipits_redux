@@ -1,94 +1,70 @@
-body{
-  color: red;
-  margin-top: 0;
+
+/*begin stick'em CSS*/
+* {
+	margin: 0;
+	padding: 0;
 }
 
-.header{
-  background: lightgrey;
+body {
+	font: 14px/1.5 Helvetica, Arial, sans-serif;
 }
 
-.tile{
-  width: 33%;
-  height: 400px;
-  background: teal;
-  left: 33%;
-  color: orange;
-  position: fixed;
-  float: left;
+/*customized*/
+.container {
+	margin: 20px auto;
+	width: 100%;
 }
 
-.tile img{
-  margin: 50px;
-  width: 300px;
-  height: 300px;
-  border-radius: 150px;
+.row {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+	position: relative;
 }
 
-.section {
-    position:relative;
-    z-index:1;
-    height:500px;
-    width:100%;
-    background-attachment:fixed;    /* this keeps the background in place */
-    background-size:100% 100%;
-    background-repeat:no-repeat;
+.row:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
 }
+
 .content {
-    position:relative;
-    z-index:2;
-    background:#fff;
-    border:2px solid #666;
-    height:50%;    /* this height difference allows the bg to show through */
-    transition-property: background, opacity;
-    transition-duration: 1s;
+	float: left;
+	width: 640px;
+  margin-top: 200px;
+  opacity: .90;
+  background: whitesmoke;
 }
 
-.purple{
-  background: purple;
-  display: block;
-  color: white;
-  opacity: 1;
-  transition-property: background, opacity;
-  transition-duration: 1s;
+.aside {
+	background: #cecece;
+	float: left;
+  position: absolute;
+	/*padding: 20px;*/
+	padding: 0 20px;
+	width: 260px;
+  z-index:-1;
 }
 
-.orange{
-  background: orange;
-  display: block;
-  color: white;
-  opacity: 1;
-  transition-property: background, opacity;
-  transition-duration: 1s;
+h2 {
+	font-size: 20px;
 }
 
-
-
-
-#c2{
-  position: sticky;
-  font-size: 40pt;
+p {
+	margin-bottom: 1.5em;
 }
 
-#c2.stuck{
-  font-size: 60pt;
-  background: blue;
+/*customized*/
+.stickit {
+	position: fixed;
+	top: 0;
+  left: 0;
 }
 
-.section#s1 {
-    background-image: url(http://farm4.staticflickr.com/3290/3090990005_1177611ccb_o.jpg);
-}
-
-.section#s2 {
-    background-image: url(http://farm5.staticflickr.com/4135/4820238049_8e830ec494_b.jpg);
-}
-
-.section#s3 {
-    background-image: url(http://farm5.staticflickr.com/4015/4589449172_eb046a7f2a_b.jpg);
-}
-
-.section#s4 {
-    background-image: url(http://farm9.staticflickr.com/8109/8623081923_9cffafc4a7_h.jpg);
-}
-.section#s5 {
-    background-image: url(http://farm4.staticflickr.com/3073/3090985991_8d4b559d29_o.jpg);
+.stickit-end {
+	bottom: 40px;
+	position: absolute;
+	left: 0;
 }
