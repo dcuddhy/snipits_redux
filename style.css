@@ -1,3 +1,16 @@
+html{
+  height: 200%;
+}
+body, .container, .stickem-container{
+  height: 100%;
+}
+ .content{
+  min-height: 50%;
+}
+.aside{
+  height: 20%;
+}
+
 
 /*begin stick'em CSS*/
 * {
@@ -11,15 +24,15 @@ body {
 
 /*customized*/
 .container {
-	margin: 20px auto;
+	/*margin: 20px auto;*/
 	width: 100%;
   box-sizing: border-box;
 }
 
 .row {
 	border-bottom: 1px solid #ccc;
-	margin-bottom: 40px;
-	padding-bottom: 40px;
+	/*margin-bottom: 40px;
+	padding-bottom: 40px;*/
 	position: relative;
 }
 
@@ -96,5 +109,5 @@ img{
   overflow: hidden;
 }
 .buffer{
-  height: 300px;
+  height: 30%;
 }
