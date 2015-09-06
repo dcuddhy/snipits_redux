@@ -1,5 +1,5 @@
 html{
-  height: 200%;
+  /*height: 200%;*/
 }
 body, .container, .stickem-container{
   height: 100%;
@@ -8,7 +8,9 @@ body, .container, .stickem-container{
   min-height: 50%;
 }
 .aside{
-  height: 20%;
+  /*will determine vertical position of aside before stickem-end applies*/
+  /*a couple of media queries may be a good idea*/
+  height: 30%;
 }
 
 
@@ -24,15 +26,13 @@ body {
 
 /*customized*/
 .container {
-	/*margin: 20px auto;*/
+	margin: 20px auto;
 	width: 100%;
   box-sizing: border-box;
 }
 
 .row {
 	border-bottom: 1px solid #ccc;
-	/*margin-bottom: 40px;
-	padding-bottom: 40px;*/
 	position: relative;
 }
 
@@ -47,20 +47,22 @@ body {
 .content {
 	float: left;
 	width: 100%;
-  margin-top: 400px;
+  margin-top: 70%;
   opacity: .90;
   background: darkred;
   color: white;
-  padding: 50px 20%;
+  padding: 20%;
   box-sizing: border-box;
   }
+.row, .stickem-container{
+  margin-bottom: -70px;
+}
 
 .aside {
 	background: white;
   color: darkred;
 	float: left;
   position: absolute;
-	/*padding: 20px;*/
 	padding: 0 20px;
 	width: 100%;
   z-index:-1;
@@ -76,17 +78,18 @@ p {
 	margin-bottom: 1.5em;
 }
 
-/*customized*/
 .stickit {
 	position: fixed;
 	top: 0;
   left: 0;
+
 }
 
 .stickit-end {
-	bottom: 40px;
+	bottom: 0;
 	position: absolute;
 	left: 0;
+
 }
 
 /*custom*/
@@ -96,10 +99,6 @@ img{
 .aside p, .content p, .aside, .content{
   text-align: center;
 }
-/*.aside {
-  height: 100%;
-}*/
-
 .headshot{
   border-radius: 100px;
   border: 4px solid whitesmoke;
@@ -108,6 +107,7 @@ img{
   box-shadow: 0 0 5px rgba(68,68,68,0.8);
   overflow: hidden;
 }
-.buffer{
-  height: 30%;
+
+.headshot-container{
+  padding-top: 10%;
 }
