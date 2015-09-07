@@ -106,9 +106,9 @@ img{
 
 /*name contains profile name and will eventually float above content element*/
 .name{
-  /*background: yellow;*/
+  background: yellow;
   position: relative;
-  /*z-index: 5;*/
+  z-index: 5;
 }
 
 
@@ -136,4 +136,7 @@ img{
 }
 .stickem-container:nth-child(4n) > .aside{
 	color: #820B14;
+}
+.stickem-container:last-of-type > .content{
+	margin-bottom: -25px;
 }
