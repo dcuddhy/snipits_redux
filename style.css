@@ -1,13 +1,15 @@
+
 /*begin stick'em CSS*/
 * {
 	margin: 0;
 	padding: 0;
 }
-
 body {
+	/*margin: 0;*/
 	font: 14pt/1.5;
   font-family: 'Lato', sans-serif;
 }
+
 
 /*customized*/
 .container {
@@ -19,6 +21,7 @@ body {
 .row {
 	border-bottom: 1px solid #ccc;
 	position: relative;
+	width: 100%
 }
 
 .row:after {
@@ -33,7 +36,8 @@ body {
 	float: left;
 	width: 100%;
   margin-top: 70%;
-  opacity: .90;
+    /*margin: 70% -20px;*/
+  opacity: .93;
   background: darkred;
   color: white;
   padding: 20%;
@@ -105,4 +109,31 @@ img{
   /*background: yellow;*/
   position: relative;
   /*z-index: 5;*/
+}
+
+
+/*start multi-color logic here*/
+.stickem-container:first-of-type > .content{
+	background: #0C3637;
+}
+.stickem-container:first-of-type > .aside{
+	color: #0C3637;
+}
+.stickem-container:nth-child(4n-2) > .content{
+	background: #0E043D;
+}
+.stickem-container:nth-child(4n-2) > .aside{
+	color: #0E043D;
+}
+.stickem-container:nth-child(4n-1) > .content{
+	background: #3F043C;
+}
+.stickem-container:nth-child(4n-1) > .aside{
+	color: #3F043C;
+}
+.stickem-container:nth-child(4n) > .content{
+	background: #820B14;
+}
+.stickem-container:nth-child(4n) > .aside{
+	color: #820B14;
 }
