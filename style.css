@@ -4,7 +4,6 @@
 	padding: 0;
 }
 body {
-	/*margin: 0;*/
 	font: 14pt/1.5;
   font-family: 'Lato', sans-serif;
 }
@@ -35,9 +34,8 @@ body {
 	float: left;
 	width: 100%;
   margin-top: 80%;
-	/*min-height: 60%;*/
 	min-height: 1000px;
-    /*margin: 70% -20px;*/
+  /*margin: 70% -20px;*/
   opacity: .93;
   background: darkred;
   color: white;
@@ -52,7 +50,6 @@ body {
 }
 
 .aside {
-	background: white;
   color: darkred;
 	float: left;
   position: absolute;
