@@ -17,7 +17,8 @@ body {
 }
 
 .row {
-	border-bottom: 1px solid #ccc;
+	/*border is useful debugging tool to find actual bottom of row*/
+	/*border-bottom: 1px solid #ccc;*/
 	position: relative;
 	width: 100%
 }
@@ -34,6 +35,8 @@ body {
 	float: left;
 	width: 100%;
   margin-top: 80%;
+	/*this margin is responsible for keeping changing header color out of content body*/
+	margin-bottom: 69px;
 	min-height: 1000px;
   /*margin: 70% -20px;*/
   opacity: .93;
