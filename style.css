@@ -36,7 +36,7 @@ body {
 	width: 100%;
   margin-top: 80%;
 	/*this margin is responsible for keeping changing header color out of content body*/
-	margin-bottom: 69px;
+	margin-bottom: 70px;
 	min-height: 1000px;
   /*margin: 70% -20px;*/
   opacity: .93;
@@ -107,9 +107,9 @@ img{
 
 /*name contains profile name and will eventually float above content element*/
 .name{
-  /*background: yellow;*/
+  background: yellow;
   position: relative;
-  /*z-index: 5;*/
+  z-index: 5;
 }
 
 .menu-title{
